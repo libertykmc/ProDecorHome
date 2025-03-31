@@ -1,9 +1,10 @@
-import UserList from "./UserList";
+import { Outlet } from "react-router-dom";
+
 const App = () => {
   return (
-    <div>
-      <UserList />
-    </div>
+    <>
+      <Outlet />
+    </>
   );
 };
 

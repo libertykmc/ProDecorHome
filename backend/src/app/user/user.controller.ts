@@ -29,14 +29,12 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Get()
-  @UseGuards(AdminGuard)
   @ApiOperation({ summary: 'Получить всех пользователей' })
   getUsers() {
     return this.userService.findAll();
   }
 
   @Get(':id')
-  @UseGuards(AdminGuard)
   @ApiOperation({ summary: 'Получить пользователя по id' })
   @ApiParam({ name: 'id', required: true, description: 'Id пользователя' })
   getUserById(@Param('id') id: string) {
@@ -44,7 +42,6 @@ export class UserController {
   }
 
   @Patch(':id')
-  @UseGuards(AdminGuard)
   @ApiOperation({ summary: 'Обновить пользователя' })
   @ApiParam({ name: 'id', required: true, description: 'Id пользователя' })
   @ApiBody({
@@ -55,7 +52,6 @@ export class UserController {
   }
 
   @Delete(':id')
-  @UseGuards(AdminGuard)
   @ApiOperation({ summary: 'Удалить пользователя' })
   @ApiParam({ name: 'id', required: true, description: 'Id пользователя' })
   removeUser(@Param('id') id: string) {
