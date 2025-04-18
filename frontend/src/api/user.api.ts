@@ -1,4 +1,4 @@
-import { User, UserCreate } from "../interfaces/user.interface";
+import { User, UserCreate, UserLogin } from "../interfaces/user.interface";
 import { client } from "./api";
 export const getUsers = async () => {
   const result = await client({
@@ -37,6 +37,15 @@ export const addUser = async (user: UserCreate) => {
   const result = await client({
     method: "POST",
     url: "/users/register",
+    data: user,
+  });
+  return result.data;
+};
+
+export const loginUser = async (user: UserLogin) => {
+  const result = await client({
+    method: "POST",
+    url: "/users/login",
     data: user,
   });
   return result.data;

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { UserContext } from "../context/UserContext.tsx";
-import { User } from "../interfaces/user.interface.ts";
+import { UserContext } from "../../context/AuthContext.tsx";
+import { User } from "../../interfaces/user.interface.ts";
 import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
@@ -9,7 +9,6 @@ const MainPage = () => {
   const showInfo = (id: string) => {
     navigate(`/${id}`);
   };
-
   return (
     <div>
       <h1>Список пользователей</h1>
@@ -19,7 +18,7 @@ const MainPage = () => {
             {user.name} {user.surname}
             <button
               onClick={() => showInfo(user.id)}
-              style={{ marginLeft: "10px" }}
+              style={{ marginLeft: "10px", padding: "5px" }}
             >
               Просмотр
             </button>
