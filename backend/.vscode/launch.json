@@ -1,0 +1,122 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach main",
+      "port": 9229,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach admin",
+      "port": 9230,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },    
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach worker",
+      "port": 9239,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach logger",
+      "port": 9231,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach aas",
+      "port": 9232,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach impex",
+      "port": 9233,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach backup",
+      "port": 9234,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach planr",
+      "port": 9235,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach schedule",
+      "port": 9236,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach mailer",
+      "port": 9237,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach notice",
+      "port": 9238,
+      "restart": true,
+      "stopOnEntry": false,
+      "protocol": "inspector"
+    },
+  ],
+  "compounds": [
+    {
+      "name": "debug all",
+      "configurations": [
+           "Attach main",
+           "Attach admin",
+           "Attach logger",
+           "Attach aas",
+           "Attach impex",
+           "Attach backup",
+           "Attach planr",
+           "Attach schedule",
+           "Attach mailer",
+           "Attach notice"
+      ]
+    }
+  ]
+}
+  

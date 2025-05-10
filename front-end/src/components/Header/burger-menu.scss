@@ -1,0 +1,39 @@
+#sidebar {
+    height: auto !important;
+    width: 120px !important;
+    top: 96px;
+}
+
+.bm-menu {
+    height: auto;
+}
+.burgerButton {
+    position: relative;
+}
+
+.bm-overlay {
+    background: #000 !important;
+}
+
+.menu-item {
+    color: #fff;
+}
+
+.bm-item-list {
+    background: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 770px) {
+    #sidebar {
+        top: 76px;
+    }
+}
+
+@media (max-width: 520px) {
+    #sidebar {
+        top: 56px;
+    }
+}

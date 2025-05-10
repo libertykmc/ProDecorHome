@@ -1,0 +1,250 @@
+.success {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    border: 0;
+    outline: 0;
+    background: 0;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #303030;
+        transform: rotate(-45deg);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #303030;
+        transform: rotate(45deg);
+    }
+}
+
+.ModalForm {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 366px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px 47px 40px 47px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.ModalLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 34px;
+    background-color: transparent;
+}
+
+.ModalLogoImage {
+    width: 220px;
+    height: 35px;
+}
+
+.ModalInput {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d0cece;
+    padding: 8px 1px;
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #d0cece;
+    }
+}
+.ModalInput:required:invalid::after {
+    content: "*";
+    color: rgb(236, 121, 121);
+    border-bottom: 2px solid rgb(236, 121, 121);
+}
+
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    width: 278px;
+    height: 52px;
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:disabled {
+        background-color: #303030;
+    }
+}
+
+.PrimaryButton {
+    cursor: pointer;
+    padding: 13px 60px;
+    background-color: #3d3d3d;
+    border-radius: 6px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    &:hover {
+        background-color: #888888;
+    }
+    &:active {
+        background-color: #888888;
+    }
+}
+.PrimaryButtonLink {
+    width: 100%;
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05px;
+    color: #ffffff;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.SecondaryButton {
+    width: 278px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid #d0cece;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    &:hover {
+        background-color: #f4f5f6;
+    }
+    &:active {
+        background-color: #d9d9d9;
+    }
+}
+.SecondaryButtonLink {
+    width: 100%;
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05px;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+//div
+.Buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+//div
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.error {
+    text-align: center;
+    color: coral;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.attention {
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 420px) {
+    .ModalForm {
+        width: 280px;
+        padding: 20px 30px 20px 30px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .ModalInput {
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+
+    .Buttons {
+        gap: 15px;
+    }
+
+    .PrimaryButton {
+        font-size: 16px;
+    }
+}

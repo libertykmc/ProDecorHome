@@ -1,0 +1,70 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+
+    > button {
+        outline: 0;
+        border: 0;
+        background: 0;
+        padding: 0;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.containerPage {
+    padding: 120px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users {
+    display: flex;
+    flex: row;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button {
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,38 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    z-index: 100000;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: relative;
+    width: 366px;
+    height: 630px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change {
+    position: absolute;
+    z-index: 1000;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+@media (max-width: 420px) {
+    .modal {
+        width: 300px;
+        height: 550px;
+    }
+}

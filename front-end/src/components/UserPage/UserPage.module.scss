@@ -1,0 +1,229 @@
+.userPage {
+    padding: 0 15px;
+    margin-top: 200px;
+}
+
+.profilsettings {
+    margin-top: 60px;
+}
+
+.profilemail {
+    margin-top: 10px;
+}
+
+.profilform {
+    gap: 17px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 33px;
+
+    align-content: center;
+    align-items: flex-start;
+}
+
+.profilInput {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d0cece;
+    padding: 8px 1px;
+}
+.profilInputDiv {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.profilesave {
+    cursor: pointer;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    width: 200px;
+    height: 37px;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #020202;
+    justify-content: center;
+    transition: all 0.3s;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.profileFavorite {
+    margin-top: 50px;
+}
+
+.favoriteProducts {
+    padding: 0 100px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    cursor: pointer;
+    width: 33.33333%;
+    transition: all 0.3s;
+    width: 378px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.product_box {
+    padding-top: 64px;
+}
+.product_box_price {
+    display: flex;
+    gap: 32px;
+}
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+}
+.product_img {
+    width: 100%;
+}
+.product_name {
+    margin-top: 10px;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-decoration: none;
+}
+.product_text_name {
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 12px;
+}
+.product_price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+}
+.product_price_sale {
+    font-style: normal;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.discountBlockPrice {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.priceOld {
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #888888;
+}
+
+.price {
+    text-align: right;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+}
+
+@media (max-width: 1164px) {
+    .favoriteProducts {
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 770px) {
+    .name {
+        font-size: 24px;
+    }
+
+    .profilemail {
+        font-size: 16px;
+    }
+
+    .profilsettings {
+        font-size: 16px;
+    }
+
+    .profilInputDiv {
+        width: 200px;
+    }
+}
+
+@media (max-width: 552px) {
+    .name {
+        font-size: 20px;
+    }
+
+    .userPage {
+        margin-top: 150px;
+    }
+
+    .profilform {
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width: 414px) {
+    .userPage {
+        margin-top: 120px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .profilemail {
+        font-size: 14px;
+    }
+
+    .profilsettings {
+        margin-top: 30px;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    .profileFavorite {
+        margin-top: 30px;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    .product_name {
+        font-size: 20px;
+    }
+    .product_text_name {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .priceOld {
+        font-size: 18px;
+    }
+}

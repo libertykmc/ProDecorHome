@@ -1,0 +1,176 @@
+.logoimg {
+    width: 100px;
+    height: 100px;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 10px;
+    background: #000000;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    gap: 129px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.footerlink {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #888888;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footericon {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formp {
+    text-align: center;
+
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.formemail {
+    position: relative;
+    width: 288px;
+    height: 41px;
+    border: 1px solid rgba(129, 129, 129, 0.6352941176);
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.formbutton {
+    cursor: pointer;
+    background: rgba(222, 215, 215, 0.41);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 288px;
+    height: 46px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+        color: #000000;
+        background-color: #c5c5c5;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logoimg {
+        display: none;
+    }
+}
+
+@media (max-width: 820px) {
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .info {
+        justify-content: space-around;
+        gap: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .info {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .menu {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .contacts {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .footerlink {
+        font-size: 12px;
+    }
+
+    .formp {
+        font-size: 12px;
+    }
+
+    .formemail {
+        width: 240px;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .formbutton {
+        width: 240px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer {
+        padding: 10px 5px;
+    }
+}

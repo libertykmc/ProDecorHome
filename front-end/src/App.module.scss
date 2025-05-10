@@ -1,0 +1,12 @@
+.main {
+    max-height: 100vh;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.mainContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,149 @@
+.catalogcenter {
+  min-height: 700px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.catalog-top {
+  height: 400px;
+  background-image: url(img/catalog-top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalog-top_title {
+  font-weight: 600;
+  line-height: 70px;
+  margin-top: 127px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-size: 64px;
+  color: #ffffff;
+  max-width: 792px;
+}
+
+.boxnavcatalog {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  padding-left: 16px;
+  padding-top: 8px;
+}
+.breadcrumbslink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+.breadcrumbslink:hover {
+  text-decoration: underline;
+}
+
+.breacrumbsspan {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.breadcrumbsspan :hover {
+  text-decoration: none;
+}
+
+.catalog_link {
+  margin-top: 32px;
+}
+.catalog_link_before-footer {
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  padding-left: 16px;
+  text-decoration: none;
+}
+.catalog_link_before-footer:hover {
+  text-decoration: underline;
+}
+
+.product_content {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  row-gap: 56px;
+  flex-wrap: wrap;
+}
+
+.product {
+  transition: all 0.3s;
+  width: 378px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
+}
+
+.productImg {
+  width: 100%;
+}
+
+.productName {
+  margin-top: 10px;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.productText {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  margin-bottom: 12px;
+}
+
+.boxPrice {
+  display: flex;
+  gap: 32px;
+}
+
+.productPrice {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #050505;
+}
+
+.productPriceSale {
+  font-style: normal;
+  text-decoration-line: line-through;
+  color: #888888;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.catalog_link {
+  margin-top: 32px;
+}
+.catalog_link_before_footer {
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  padding-left: 16px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
