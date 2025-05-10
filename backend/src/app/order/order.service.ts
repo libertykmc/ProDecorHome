@@ -72,4 +72,8 @@ export class OrderService {
 
     return orderEntity.id;
   }
+
+  async deleteOrder(dto: IdDto) {
+    await this.manager.delete(OrderEntity, { id: dto.id });
+  }
 }

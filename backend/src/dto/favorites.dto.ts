@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Expose, Type } from 'class-transformer';
-import { IsNumber, IsString, IsUUID } from 'class-validator';
+import { IsArray, IsNumber, IsString, IsUUID } from 'class-validator';
 import { Values } from 'src/models/order.entity';
 
 export class FavoritesRequestDto {
@@ -38,6 +38,10 @@ export class FavoritesDto extends FavoritesAndOrderRequestDto {
   @ApiProperty({ type: Number })
   @IsNumber()
   readonly discount: number;
+
+  @ApiProperty({ type: 'string', isArray: true })
+  @IsArray()
+  readonly images: string[];
 }
 
 export class OrderProductDto {

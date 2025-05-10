@@ -10,6 +10,7 @@ export class MapperFavorites {
       title: e.product.title,
       discount: e.product.discount,
       price: e.product.price,
+      images: e.product.images,
     };
   }
 

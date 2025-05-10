@@ -1,4 +1,12 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { OrderService } from './order.service';
 import { FavoritesRequestDto } from 'src/dto/favorites.dto';
@@ -27,5 +35,10 @@ export class OrderController {
   @Post()
   createOrder(@Body() dto: CreateOrderDto) {
     return this.orderService.createOrder(dto);
+  }
+
+  @Delete(':id')
+  deleteOrder(@Param() id: IdDto) {
+    return this.orderService.deleteOrder(id);
   }
 }
