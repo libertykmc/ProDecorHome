@@ -40,7 +40,7 @@ const Footer = () => {
             ул. Рабфаковская д. 34, Иваново
           </a>
           <div className={styles.footericon}>
-            <a href="https://vk.com/geogecell" target="_blank">
+            <a href="https://vk.com/geogeocell" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
